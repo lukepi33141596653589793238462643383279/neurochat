@@ -1,0 +1,31 @@
+/* =========================
+   ⚡ GLOW ANIMATIONS
+========================= */
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 5px var(--blue-primary);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--blue-primary);
+  }
+  100% {
+    box-shadow: 0 0 5px var(--blue-primary);
+  }
+}
+
+.glow {
+  animation: glowPulse 2s infinite;
+}
+
+/* typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1.5s steps(30, end);
+}
