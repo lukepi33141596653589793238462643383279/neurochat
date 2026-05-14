@@ -1,0 +1,26 @@
+/* =========================
+   🌌 DARK NEON THEME
+========================= */
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* background grid tech */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(59,130,246,0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* selection */
+::selection {
+  background: var(--blue-primary);
+  color: white;
+}
