@@ -1,0 +1,59 @@
+/* =========================
+   🧠 AI TEXT EDITOR / INPUT
+========================= */
+
+.editor-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: var(--space-lg);
+  z-index: 2;
+  position: relative;
+}
+
+/* área de escrita estilo IA */
+.ai-input {
+  width: 100%;
+  min-height: 120px;
+  background: var(--bg-secondary);
+  border: 1px solid rgba(59,130,246,0.2);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  color: var(--text-primary);
+  outline: none;
+  resize: none;
+
+  box-shadow: var(--shadow-sm);
+  transition: 0.3s ease;
+}
+
+.ai-input:focus {
+  border-color: var(--blue-primary);
+  box-shadow: var(--shadow-glow);
+}
+
+/* botão de enviar */
+.ai-send {
+  margin-top: var(--space-sm);
+  padding: 10px 16px;
+  background: linear-gradient(90deg, var(--blue-primary), var(--ai-cyan));
+  border: none;
+  color: white;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.ai-send:hover {
+  transform: scale(1.03);
+}
+
+/* resposta da IA */
+.ai-response {
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background: var(--bg-tertiary);
+  border-left: 3px solid var(--blue-primary);
+  border-radius: var(--radius-sm);
+  white-space: pre-wrap;
+}
